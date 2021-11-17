@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_graph_68_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "Place the basketball on the bed in front of the first laptop.",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "on the bed in front of the first laptop"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "basketball"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place"
+                }
+            }
+        }
+    ]
+}

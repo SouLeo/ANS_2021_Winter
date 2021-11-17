@@ -1,0 +1,28 @@
+{
+    "graph_name": "urmf_iak284_84",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "Pick up the basketball on the floor to the left of the bed",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "on the floor to the left of the bed"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the basketball"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "Pick up"
+                }
+            }
+        }
+    ]
+}

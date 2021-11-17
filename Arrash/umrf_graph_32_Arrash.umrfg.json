@@ -1,0 +1,76 @@
+{
+    "graph_name": "umrf_graph_32_Arrash",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaManouevre",
+            "package_name": "ta_manouevre",
+            "description": "turn around",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "direction": {
+                    "pvf_type": "string",
+                    "pvf_example": "around"
+                },
+                "distance": {
+                    "amount": {
+                        "pvf_type": "number"
+                    },
+                    "unit": {
+                        "pvf_type": "string"
+                    }
+                },
+                "extent": {
+                    "pvf_type": "string"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "turn"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaManouevre",
+                    "id": 1
+                }
+            ]
+        },
+        {
+            "name": "TaManouevre",
+            "package_name": "ta_manouevre",
+            "description": "turn around",
+            "id": 1,
+            "effect": "synchronous",
+            "input_parameters": {
+                "direction": {
+                    "pvf_type": "string",
+                    "pvf_example": "around"
+                },
+                "distance": {
+                    "amount": {
+                        "pvf_type": "number"
+                    },
+                    "unit": {
+                        "pvf_type": "string"
+                    }
+                },
+                "extent": {
+                    "pvf_type": "string"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "turn"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaManouevre",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_cyn_0031",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "Place the clock from the table onto the top shelf",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "the top shelf"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the clock from the table"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place ... onto"
+                }
+            }
+        }
+    ]
+}

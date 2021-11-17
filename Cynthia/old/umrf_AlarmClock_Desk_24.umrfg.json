@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_AlarmClock_Desk_24",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "Place the alarm clock on the desk, above the drawers.",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "the desk, above the drawers"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the alarm clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place ... on"
+                }
+            }
+        }
+    ]
+}

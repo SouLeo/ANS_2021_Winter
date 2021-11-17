@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_cyn_0043",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaManouevre",
+            "package_name": "ta_manouevre",
+            "description": "Walk across the room to the left",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "direction": {
+                    "pvf_type": "string",
+                    "pvf_example": "the left"
+                },
+                "extent": {
+                    "pvf_type": "string",
+                    "pvf_example": "across the room"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "walk ... to"
+                }
+            }
+        }
+    ]
+}

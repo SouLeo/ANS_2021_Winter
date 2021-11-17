@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_graph_4_Arrash",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "pick up the alarm clock that is sitting on top of the desk",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "on top of the desk"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "alarm clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "pick up"
+                }
+            }
+        }
+    ]
+}

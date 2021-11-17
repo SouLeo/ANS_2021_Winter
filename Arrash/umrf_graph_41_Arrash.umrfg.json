@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_graph_41_Arrash",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaTransport",
+            "package_name": "ta_transport",
+            "description": "carry the knife to the fridge",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "fridge"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "knife"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "carry"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "graph_name": "urmf_iak284_3",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "put the alarm clock on to the desk",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "the desk"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the alarm clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "put"
+                }
+            }
+        }
+    ]
+}

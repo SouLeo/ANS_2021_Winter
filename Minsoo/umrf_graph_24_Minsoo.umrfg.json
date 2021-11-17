@@ -1,0 +1,54 @@
+{
+    "graph_name": "umrf_graph_24_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaManouevre",
+            "package_name": "ta_manouevre",
+            "description": "Turn left",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "direction": {
+                    "pvf_type": "string",
+                    "pvf_example": "left"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "turn"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaNavigation",
+                    "id": 0
+                }
+            ]
+        },
+        {
+            "name": "TaNavigation",
+            "package_name": "ta_navigation",
+            "description": "head to the back right wood shelving",
+            "id": 0,
+            "effect": "synchronous",
+            "output_parameters": {
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "back right wood shelving"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "head back"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaManouevre",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

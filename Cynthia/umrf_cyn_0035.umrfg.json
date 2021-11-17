@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_cyn_0035",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "Take the lunch box from the bedside table",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "the bedside table"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the lunch box"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "take ... from"
+                }
+            }
+        }
+    ]
+}

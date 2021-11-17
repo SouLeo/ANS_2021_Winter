@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_cyn_0055",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "Stand the bat on end near the left laptop's bottom left side if you were facing the laptop.",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "near the left laptop's bottom left side if you were facing the laptop"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the bat"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "stand ... on end"
+                }
+            }
+        }
+    ]
+}

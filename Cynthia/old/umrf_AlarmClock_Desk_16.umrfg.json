@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_AlarmClock_Desk_16",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "Place the clock on the far right side of the desk top",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "the far right side of the desk top"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place ... on"
+                }
+            }
+        }
+    ]
+}

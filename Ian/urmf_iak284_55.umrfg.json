@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_iak284_55",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaTransport",
+            "package_name": "ta_transport",
+            "description": "Move a wooden bat from the ground to a bed.",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "a bed"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "a wooden bat"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "Move"
+                }
+            }
+        }
+    ]
+}

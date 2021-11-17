@@ -1,0 +1,58 @@
+{
+    "graph_name": "umrf_graph_19_Arrash",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaOrient",
+            "package_name": "ta_orient",
+            "description": "look up",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "landmark": {
+                    "pvf_type": "string",
+                    "pvf_example": "up"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "look"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaPickup",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        },
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "pick up the alarm clock on the night stand",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "night stand"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "alarm clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "pick up"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaOrient",
+                    "id": 0
+                }
+            ]
+        }
+    ]
+}

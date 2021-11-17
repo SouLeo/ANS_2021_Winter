@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_graph_25_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "Move the clock to the left of the computer on top of the dresser",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "left of the computer on top of the dresser"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "move"
+                }
+            }
+        }
+    ]
+}

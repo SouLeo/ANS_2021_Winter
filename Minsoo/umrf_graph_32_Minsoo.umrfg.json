@@ -1,0 +1,62 @@
+{
+    "graph_name": "umrf_graph_32_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "Place the clock from the table\n",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "table"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaPlace",
+                    "id": 0
+                }
+            ]
+        },
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "place the clock...onto the top shelf",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "onto the top shelf"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaPickup",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

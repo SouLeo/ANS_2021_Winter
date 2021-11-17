@@ -1,0 +1,24 @@
+{
+    "graph_name": "umrf_cyn_0045",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaOrient",
+            "package_name": "ta_orient",
+            "description": "Turn left to face the microwave",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "landmark": {
+                    "pvf_type": "string",
+                    "pvf_example": "the microwave"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "turn left to face"
+                }
+            }
+        }
+    ]
+}

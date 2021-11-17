@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_graph_42_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaTransport",
+            "package_name": "ta_transport",
+            "description": "Carry a knife to cut the yellow apple in the fridge",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "yellow apple in the fridge"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "knife"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "carry"
+                }
+            }
+        }
+    ]
+}

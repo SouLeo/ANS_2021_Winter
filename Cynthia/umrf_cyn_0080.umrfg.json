@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_cyn_0080",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "Place the basketball on top of the green table",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "the green table"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the basketball"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place ... on top of"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "graph_name": "umrf_graph_139_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "Grab magazine from bed",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "bed"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "magazine"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "Grab"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaPlace",
+                    "id": 0
+                }
+            ]
+        },
+        {
+            "name": "TaPlace",
+            "package_name": "ta_place",
+            "description": "place onto desk",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "onto desk"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "magazine"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "place"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaPickup",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

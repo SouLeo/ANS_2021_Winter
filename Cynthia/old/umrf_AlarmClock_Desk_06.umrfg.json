@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_AlarmClock_Desk_06",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "Pick up the middle alarm clock from the desk",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "from the desk"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the middle alarm clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "pick up"
+                }
+            }
+        }
+    ]
+}

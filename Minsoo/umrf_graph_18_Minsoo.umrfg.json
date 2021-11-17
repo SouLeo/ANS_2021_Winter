@@ -1,0 +1,84 @@
+{
+    "graph_name": "umrf_graph_18_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaOrient",
+            "package_name": "ta_orient",
+            "description": "Turn left",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "turn left"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaTransport",
+                    "id": 0
+                }
+            ]
+        },
+        {
+            "name": "TaOrient",
+            "package_name": "ta_orient",
+            "description": "turn right facing the desk",
+            "id": 1,
+            "effect": "synchronous",
+            "input_parameters": {
+                "landmark": {
+                    "pvf_type": "string",
+                    "pvf_example": "desk"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "turn right facing"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaTransport",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        },
+        {
+            "name": "TaTransport",
+            "package_name": "ta_transport",
+            "description": "with the alarm clock and walk straight...desk",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "desk"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "alarm clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "walk"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaOrient",
+                    "id": 1
+                }
+            ],
+            "parents": [
+                {
+                    "name": "TaOrient",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

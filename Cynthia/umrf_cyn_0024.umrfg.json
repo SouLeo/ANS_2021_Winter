@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_cyn_0024",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaTransport",
+            "package_name": "ta_transport",
+            "description": "Move the clock to the left of the computer on top of the dresser",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "the left of the computer on top of the dresser"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "move ... to"
+                }
+            }
+        }
+    ]
+}

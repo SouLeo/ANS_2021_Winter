@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_cyn_0001",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaTransport",
+            "package_name": "ta_transport",
+            "description": "move the alarm clock from one desk to another one",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "to another one (desk)"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "the alarm clock"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "move"
+                }
+            }
+        }
+    ]
+}

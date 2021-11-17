@@ -1,0 +1,58 @@
+{
+    "graph_name": "umrf_graph_138_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaNavigation",
+            "package_name": "ta_navigation",
+            "description": "Go to bed",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "extent": {
+                    "pvf_type": "string",
+                    "pvf_example": "to"
+                },
+                "location": {
+                    "pvf_type": "string",
+                    "pvf_example": "bed"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "go"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaPickup",
+                    "id": 0
+                }
+            ]
+        },
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "pick up magazine",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "magazine"
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "pick up"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaNavigation",
+                    "id": 0,
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

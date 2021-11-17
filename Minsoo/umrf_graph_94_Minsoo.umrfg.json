@@ -1,0 +1,28 @@
+{
+    "graph_name": "umrf_graph_94_Minsoo",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaPickup",
+            "package_name": "ta_pickup",
+            "description": "Pick up the book entitled \"Huckleberry Finn\" that's in front of you on the table.\n",
+            "id": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "locale": {
+                    "pvf_type": "string",
+                    "pvf_example": "in front of you on the table"
+                },
+                "object": {
+                    "pvf_type": "string",
+                    "pvf_example": "book entitled \"Huckleberry Finn\""
+                },
+                "verb": {
+                    "pvf_type": "string",
+                    "pvf_example": "Pick up"
+                }
+            }
+        }
+    ]
+}
